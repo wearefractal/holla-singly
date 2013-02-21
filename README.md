@@ -23,7 +23,7 @@ Recommended to use with https://github.com/wearefractal/singly
 
 ```javascript
 var singly = require('holla-singly');
-holla.createServer(httpServer, singly);
+holla.createServer(httpServer, {adapter: singly});
 ```
 
 ## LICENSE
