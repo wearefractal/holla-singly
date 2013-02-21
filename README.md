@@ -1,14 +1,12 @@
-![status](https://secure.travis-ci.org/wearefractal/APPNAME.png?branch=master)
-
 ## Information
 
 <table>
 <tr> 
-<td>Package</td><td>APPNAME</td>
+<td>Package</td><td>holla-singly</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>NOTHING HERE YET</td>
+<td>Singly authentication for holla</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -16,15 +14,17 @@
 </tr>
 </table>
 
+
+This allows you to login to holla with twitter, facebook, google, and 37 other social networks. Just send up a singly access token instead of a name in .register on the client and you're set.
+
+Recommended to use with https://github.com/wearefractal/singly
+
 ## Usage
 
-```coffee-script
-NOTHING HERE YET
+```javascript
+var singly = require('holla-singly');
+holla.createServer(httpServer, singly);
 ```
-
-## Examples
-
-You can view more examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
 
 ## LICENSE
 
