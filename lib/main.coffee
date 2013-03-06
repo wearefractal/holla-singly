@@ -13,8 +13,8 @@ module.exports =
         body = JSON.parse body
       catch e
         return cb false
-      return cb false unless body?.name?
+      return cb false unless body?.id?
       req.socket.auth = body
-      req.socket.identity = body.name
-      @users[body.name] = req.socket.id
+      req.socket.identity = body.id
+      @users[body.id] = req.socket.id
       cb()

@@ -15,7 +15,7 @@
 </table>
 
 
-This allows you to login to holla with twitter, facebook, google, and 37 other social networks. Just send up a singly access token instead of a name in .register on the client and you're set.
+This allows you to login to holla with twitter, facebook, google, and 37 other social networks.
 
 Recommended to use with https://github.com/wearefractal/singly
 
@@ -25,6 +25,8 @@ Recommended to use with https://github.com/wearefractal/singly
 var singly = require('holla-singly');
 holla.createServer(httpServer, {adapter: singly});
 ```
+
+When you register from the client use your singly token instead of a name. When you place a call use their singly id not a name.
 
 ## LICENSE
 
